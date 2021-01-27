@@ -1,0 +1,177 @@
+/* Html Global */
+*{
+    margin: 0;  /* enlever les marges automatiques */
+    padding: 0; /* enlever les marges automatiques */
+    width: auto;    /** largeur automatique **/
+}
+/* Fin */
+
+/* Navbar */
+.navbar{
+    height: auto;   /* attribuer une taille automatique a la navbar */
+    width: auto;    /* attribuer une largeur automatique a la navbar */
+    background: linear-gradient(#e66465, #9198e5);    /* couleur de fond de la navbar */
+}
+.listenavbar{
+    display: flex;  /* pour afficher les liens sur une seule ligne */
+    width: auto;    /* donner a la navbar une taille de 100% en largeur */
+    padding: 2%;    /* cadre intérieur dans le bloc */
+}
+li{
+    padding: 1%;    /* cadre intérieur dans le bloc navbar */
+    width: 50%; /* un élément de la liste fait 50% parcequ'il y a 2 éléments */
+    text-align: center; /* alligner le contenu de chaque compartiment au milieu de celui-ci */
+    list-style-type: none;   /* enlever les points aujouter automatiquement aux listes */
+}
+#navbara{
+    color: #3700B3;  /* mettre le text en blanc */
+    text-decoration: none;  /* enlever le soulignement automatique des liens */
+    font-size: 150%;   /* mettre le text en plus gros */
+}
+/* Fin */
+
+.centredelapage{
+    width: auto;
+    margin: 5%;
+    display: flex;
+}
+.titre{
+    font-size: 200%;
+    width: auto;
+    margin: 0;
+}
+.presentation{
+    box-shadow: 8px 8px 12px #aaa;
+    padding: 3%;
+    margin: 2%;
+}
+.textcontenu{
+    text-align: left;
+    line-height: 150%;
+}
+.contenu{
+    display:block;
+    margin: 1%;
+}
+.infocontenu{
+    min-width: 40%;
+    margin: 2%;
+}
+.infoecriture{
+    font-size: 150%;
+    margin: 8%;
+    padding: 2%;
+    text-align: center;
+    background-color:#048b9a;
+    color: white;
+    transition: 0.5s;
+}
+.infoecriture:hover{
+    background-color: #02717e;
+    box-shadow: 8px 12px 8px #aaa;
+}
+#infotitre{
+    text-align: center;
+}
+
+@media(max-width: 425px){
+    .centredelapage{
+        display: inline-block;
+    }
+}
+
+.partenaires{
+    margin: 2%;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.infopartenaire{
+    margin: 2%;
+    width: 30%;
+    font-size: 125%;
+    background-color: #8cf395;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    user-select: none;
+}
+div#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+    transition: 0.5s;
+}
+.popup{
+    position: fixed;
+    margin: auto;
+    top: 40%;
+    left: 50%;
+    padding: 2%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+}
+#popupsmictom.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    z-index: 999;
+}
+#popupormeactivitee.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    z-index: 999;
+}
+#popupesat.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    z-index: 999;
+}
+.titrepopup{
+    text-align: center;
+    padding: 2%;
+    font-size: 200%;
+}
+.textpopup{
+    padding: 2%;
+    font-size: 125%;
+}
+.lesbtnpopup{
+    display: flex;
+    text-align: center;
+}
+.btngrouppopup{
+    background-color: #8cf395;
+    width: 49%;
+    padding: 2%;
+    margin: 1%;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    color: #BB86FC;   /* couleur de l'écriture */
+    background-color: #121212; /* couleur de fond */
+    width: auto;    /* largeur */
+    padding: 2%;    /* contour intérieur */
+    display: flex;  /* affichage */
+}
+.containerfooter{
+    text-align:center;  /* allignement du texte au milieu */
+    padding: 1%;    /* contour intérieur */
+    width: 32%; /* largeur */
+}
+/* Fin */
