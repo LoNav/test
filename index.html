@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Langue de la page par défaut -->
+  <head>
+    <meta name="auteur" content="Navet Louis" />
+    <!-- Auteur -->
+    <meta
+      name="description"
+      content="Agri-Methazebrouck collecte, recyclage, valorisation des déchets ménagers"
+    />
+    <!-- Description du site -->
+    <meta charset="UTF-8" />
+    <!-- Encodage des caractères de la page -->
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable, initial-scale=1.0, nimimum-scale=1.0"
+    />
+    <!-- Respecter le responsive -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Feuille css -->
+    <link rel="icon" href="C:\Users\E20190124\Desktop\Stage\plante.png" />
+    <!-- Icon de la tab dans le navigateur -->
+    <title>Agri Méthazebrouck</title>
+    <!-- Nom du site -->
+  </head>
+  <body>
+    <!-- Corp de la page -->
+
+    <div id="blur">
+
+      <!-- Navbar -->
+      <div class="navbar">
+        <!-- Navbar du site -->
+        <ul class="listenavbar">
+          <!-- Liste dans la navbar -->
+          <li><a id="navbara" href="#">Agrimetazebrouck</a></li>
+          <!-- Lien vers la page elle meme -->
+          <li><a id="navbara" href="./Devis.html">Devis</a></li>
+          <!-- Lien vers la page devis -->
+        </ul>
+      </div>
+      <!-- Fin -->
+
+      <!-- Contenu -->
+
+      <div class="centredelapage">
+        <div class="presentation">
+          <div class="contenu">
+            <div class="titre">La Méthanisation</div>
+            c'est comme accélerer le temps, stocker un mélange de matière
+            organique ou l'on concentre des bactéries qui décomposent le mélange
+            et créer du méthane après opération le digestat et le biogaz
+          </div>
+
+          <div class="contenu">
+            <div class="titre">Le BioGaz</div>
+            est produit pour faire de l'éléctricité, de la chaleur et meme les
+            deux en meme temps, mais il est utilisable en BioCarburant également
+          </div>
+
+          <div class="contenu">
+            <div class="titre">Le Digestat</div>
+            est le produit après décomposition de la matière qui peut servir
+            d'engrais sur les exploitations agricoles en prenant quelques
+            précautions
+          </div>
+        </div>
+
+        <div class="infocontenu">
+          <div class="titre" id="infotitre">Le Mélange organique</div>
+          <div class="infoecriture">Déchets verts broyés</div>
+          <div class="infoecriture">Sous produits agricole</div>
+          <div class="infoecriture">Fumier animal</div>
+        </div>
+      </div>
+
+      <div class="partenaires" id="blur">
+        <a class="infopartenaire" onclick="toggleEsat()">
+          <div class="contenupartenaire">L'Esat Les papillons blancs</div>
+        </a>
+
+        <a class="infopartenaire" onclick="toggleOrmeactivitee()">
+          <div class="contenupartenaire">Orme activitée</div>
+        </a>
+
+        <a class="infopartenaire" onclick="toggleSmictom()">
+          <div class="contenupartenaire">Smictom des flandres</div>
+        </a>
+      </div>
+
+      <!-- Fin -->
+
+      <!-- Footer -->
+      <div class="footer">
+        <!-- Footer du site -->
+        <div id="fg1" class="containerfooter">
+          <!-- Premier cadre -->
+          Copyright© 2021 Navet Louis. Tout droit réservé
+          <!-- contenu du premier cadre -->
+        </div>
+        <div id="fg2" class="containerfooter">
+          <!-- deuxième cadre -->
+          Mentions Légales
+          <!-- contenu du deuxième cadre -->
+        </div>
+        <div id="fg3" class="containerfooter">
+          <!-- troisième cadre -->
+          Contactez-Nous!
+          <!-- contenu du troisième cadre -->
+        </div>
+      </div>
+      <!-- Fin -->
+
+    </div>
+
+    <div class="popup" id="popupesat">
+      <div class="titrepopup">Esat</div>
+      <div class="textpopup">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui rem,
+        quidem sed nam perferendis tempora quasi, itaque animi voluptatibus
+        odit quod quibusdam minima reiciendis dicta fuga officia voluptatum
+        minus dolorum?
+      </div>
+      <div class="lesbtnpopup">
+        <a onclick="toggleEsat()" id="btnpopup1" class="btngrouppopup">Fermer</a>
+        <a href="https://www.papillonsblancshazebrouck.org/les-secteurs/secteur-travail-activites/esat-hazebrouck/"
+          id="btnpopup2" class="btngrouppopup"
+          >Le site</a
+        >
+      </div>
+    </div>
+
+    <div class="popup" id="popupormeactivitee">
+      <div class="titrepopup">Orme activitée</div>
+      <div class="textpopup">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui rem,
+        quidem sed nam perferendis tempora quasi, itaque animi voluptatibus
+        odit quod quibusdam minima reiciendis dicta fuga officia voluptatum
+        minus dolorum?
+      </div>
+      <div class="lesbtnpopup">
+        <a onclick="toggleOrmeactivitee()" id="btnpopup1" class="btngrouppopup">Fermer</a>
+        <a href="http://orme-activitee.e-monsite.com/" id="btnpopup2" class="btngrouppopup"
+          >Le site</a
+        >
+      </div>
+    </div>
+
+    <div class="popup" id="popupsmictom">
+      <div class="titrepopup">Smictom des flandres</div>
+      <div class="textpopup">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui rem,
+        quidem sed nam perferendis tempora quasi, itaque animi voluptatibus
+        odit quod quibusdam minima reiciendis dicta fuga officia voluptatum
+        minus dolorum?
+      </div>
+      <div class="lesbtnpopup">
+        <a onclick="toggleSmictom()" id="btnpopup1" class="btngrouppopup">Fermer</a>
+        <ahref="http://www.smictomdesflandres.fr/" id="btnpopup2" class="btngrouppopup">Le site</a>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
