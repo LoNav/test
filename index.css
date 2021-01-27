@@ -65,6 +65,7 @@ li{
     background-color:#048b9a;
     color: white;
     transition: 0.5s;
+    cursor: default;
 }
 .infoecriture:hover{
     background-color: #02717e;
