@@ -2,7 +2,8 @@
 *{
     margin: 0;  /* enlever les marges automatiques */
     padding: 0; /* enlever les marges automatiques */
-    width: auto;    /** largeur automatique **/
+    width: auto;    /* largeur automatique */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* Fin */
 
@@ -31,135 +32,139 @@ li{
 /* Fin */
 
 .centredelapage{
-    width: auto;
-    margin: 5%;
-    display: flex;
+    width: auto;    /* attribuer une largeur automatique a la navbar */
+    margin: 5%; /* attribuer des marges de 5% */
+    display: flex;  /* pour afficher les liens sur une seule ligne */
 }
 .titre{
-    font-size: 200%;
-    width: auto;
-    margin: 0;
+    font-size: 200%; /* taille de police */
+    width: auto;    /* attribuer une largeur automatique a la navbar */
+    margin: 0;  /* enlever les marges automatiques */
 }
 .presentation{
-    box-shadow: 8px 8px 12px #aaa;
-    padding: 3%;
-    margin: 2%;
+    box-shadow: 8px 8px 12px #aaa;  /* attribuer des orbres au bloc */
+    padding: 3%;    /* cadre intérieur de 3% */
+    margin: 2%; /* attribuer des marges de 2% */
 }
 .textcontenu{
-    text-align: left;
-    line-height: 150%;
+    text-align: left;   /* le texte s'alligne a gauche */
+    line-height: 150%;  /* inter-lignes de 150% */
 }
 .contenu{
-    display:block;
-    margin: 1%;
+    display: block; /* pour afficher d'un bloc */
+    margin: 1%; /* attribuer des marges de 1% */
 }
 .infocontenu{
-    min-width: 40%;
-    margin: 2%;
+    min-width: 40%; /* attribuer une taille minimale de 40% */
+    margin: 2%; /* attribuer des marges de 2% */
 }
 .infoecriture{
-    font-size: 150%;
-    margin: 8%;
-    padding: 2%;
-    text-align: center;
-    background-color:#048b9a;
-    color: white;
-    transition: 0.5s;
-    cursor: default;
+    font-size: 150%;    /* attribuer une taille de 150% au texte */
+    margin: 8%; /* attribuer des marges de 8% */
+    padding: 2%;    /* cadre intérieur de 2% */
+    text-align: center; /* le texte s'alligne au milieu */
+    background-color:#048b9a;   /* couleur de fond */
+    color: white;   /* couleur du texte */
+    transition: 0.5s;   /* transition de 0.5 secondes */
+    cursor: default;    /* cuseur par défaut */
 }
-.infoecriture:hover{
-    background-color: #02717e;
-    box-shadow: 8px 12px 8px #aaa;
+.infoecriture:hover{    /* quand la souris passe sur l'élément */
+    background-color: #02717e;  /* couleur de fond */
+    box-shadow: 8px 12px 8px #aaa;  /* attribuer des orbres au bloc */
 }
 #infotitre{
-    text-align: center;
+    text-align: center; /* le texte s'alligne au milieu */
 }
 
-@media(max-width: 425px){
+@media(max-width: 425px){   /* quand la taille de lécran est de  */
     .centredelapage{
-        display: inline-block;
+        display: inline-block;  /* pour afficher d'un bloc */
+    }
+    .contenupartenaire{
+        font-size: 55%;
     }
 }
 
 .partenaires{
-    margin: 2%;
-    display: flex;
-    height: auto;
-    width: auto;
+    margin: 2%; /* attribuer des marges de 2% */
+    display: flex;  /* pour afficher sur une ligne */
+    height: auto;   /* attribuer une taille automatique */
+    width: auto;    /* attribuer une largeur automatique */
 }
 
 .infopartenaire{
-    margin: 2%;
-    width: 30%;
-    font-size: 125%;
-    background-color: #8cf395;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    user-select: none;
+    margin: 2%; /* attribuer des marges de 2% */
+    width: 30%; /* attribuer une largeur de 30% */
+    font-size: 125%;    /* attribuer une taille de 125% au texte */
+    background-color: #8cf395;  /* couleur de fond */
+    text-align: center; /* le texte s'alligne au milieu */
+    justify-content: center;    /* mettre le contenu au milieu */
+    align-items: center;    /* mettre le contenu au milieu */
+    padding: 2%;    /* cadre intérieur de 2% */
+    user-select: none;  /* empecher les selections d'utilisateurs */
 }
 div#blur.active{
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-    transition: 0.5s;
+    filter: blur(20px); /* appliquer un flou */
+    pointer-events: none;   /* la souris ne peut pas intéragir avec l'élément */
+    user-select: none;  /* empecher les selections d'utilisateurs */
+    transition: 0.5s;   /* transition de 0.5 secondes */
 }
 .popup{
-    position: fixed;
-    margin: auto;
-    top: 40%;
-    left: 50%;
-    padding: 2%;
-    width: auto;
-    height: auto;
+    position: fixed;     /* fixe la position */
+    margin: auto;    /* attribue des marges automatiqud */
+    top: 40%;    /* se place a 40% du bord supérieur */
+    left: 50%;   /* se place a 50% du bord gauche */
+    padding: 2%;    /* cadre intérieur de 2% */
+    width: auto;    /* attribuer une largeur automatique */
+    height: auto;   /* attribuer une taille automatique */
     transform: translate(-50%,-50%);
-    background-color: #fff;
-    box-shadow: 0 5px 30px rgba(0,0,0,.30);
-    visibility: hidden;
-    opacity: 0;
-    transition: 1s;
-    z-index: -1;
+    background-color: #fff; /* couleur de fond */
+    box-shadow: 0 5px 30px rgba(0,0,0,.30); /* ombre autour du cadre */
+    visibility: hidden; /* cet élément est caché */
+    opacity: 0; /* il n'est pas visible */
+    transition: 1s; /* ses transitions dure 1 seconde */
+    z-index: -1;    /* sa position sur l'axe z est de -1 */
 }
 #popupsmictom.active{
-    visibility: visible;
-    opacity: 1;
-    transition: 1s;
-    z-index: 999;
+    visibility: visible;    /* il est visible */
+    opacity: 1; /* il est opaque */
+    transition: 1s; /* ses transitions dure 1 secondes */
+    z-index: 999;   /* sa position sur l'axe z est de 999 */
 }
 #popupormeactivitee.active{
-    visibility: visible;
-    opacity: 1;
-    transition: 1s;
-    z-index: 999;
+    visibility: visible;    /* il est visible */
+    opacity: 1; /* il est opaque */
+    transition: 1s; /* ses transitions dure 1 secondes */
+    z-index: 999;   /* sa position sur l'axe z est de 999 */
 }
 #popupesat.active{
-    visibility: visible;
-    opacity: 1;
-    transition: 1s;
-    z-index: 999;
+    visibility: visible;    /* il est visible */
+    opacity: 1; /* il est opaque */
+    transition: 1s; /* ses transitions dure 1 secondes */
+    z-index: 999;   /* sa position sur l'axe z est de 999 */
 }
 .titrepopup{
-    text-align: center;
-    padding: 2%;
-    font-size: 200%;
+    text-align: center; /* le texte s'alligne au centre */
+    padding: 2%;    /* cadre intérieur de 2% */
+    font-size: 200%;    /* la taille de la police est de 200% */
+    color: #3700B3; /* couleur du titre */
 }
 .textpopup{
-    padding: 2%;
-    font-size: 125%;
+    padding: 2%;    /* le cadre intérieur est de 2% */
+    font-size: 125%;    /* la taille de la police est de 125% */
 }
 .lesbtnpopup{
-    display: flex;
-    text-align: center;
+    display: flex;  /* affiche le contenu en ligne */
+    text-align: center; /* alligne le texte au mileiu de son bloc */
 }
 .btngrouppopup{
-    background-color: #8cf395;
-    width: 49%;
-    padding: 2%;
-    margin: 1%;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+    background-color: #8cf395;  /* couleur de fond */
+    width: 49%; /* largeur de 49% */
+    padding: 2%;    /* marges intérieur de 2% */
+    margin: 1%; /* marges extérieur de 1% */
+    text-decoration: none;  /* enlève les décorations de texte */
+    color: black;   /* texte en noir */
+    cursor: default;    /* le curseur est celui par défaut */
 }
 
 /* Footer */
