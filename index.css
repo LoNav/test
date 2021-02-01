@@ -85,6 +85,11 @@ li{
     }
 }
 
+.lespartenairestitre{
+    font-size: 200%;
+    text-align: center;
+}
+
 .partenaires{
     margin: 2%; /* attribuer des marges de 2% */
     display: flex;  /* pour afficher sur une ligne */
