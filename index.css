@@ -9,9 +9,10 @@
 
 /* Navbar */
 .navbar{
-    height: auto;   /* attribuer une taille automatique a la navbar */
+    height: 30%;   /* attribuer une taille automatique a la navbar */
     width: auto;    /* attribuer une largeur automatique a la navbar */
-    background: linear-gradient(#e66465, #9198e5);    /* couleur de fond de la navbar */
+    background-color: #048b9a ;  /* couleur de fond de la navbar */
+    margin-bottom: 2%;
 }
 .listenavbar{
     display: flex;  /* pour afficher les liens sur une seule ligne */
@@ -45,6 +46,7 @@ li{
     box-shadow: 8px 8px 12px #aaa;  /* attribuer des orbres au bloc */
     padding: 3%;    /* cadre intérieur de 3% */
     margin: 2%; /* attribuer des marges de 2% */
+    background-color: coral;
 }
 .textcontenu{
     text-align: left;   /* le texte s'alligne a gauche */
@@ -172,6 +174,70 @@ div#blur.active{
     cursor: default;    /* le curseur est celui par défaut */
 }
 
+.présentation{
+    display: flex;
+    width: auto;
+}
+.Contenu{
+    width: auto;
+    margin: 2%;
+    font-size: 150%;
+    display: block;
+}
+.texte{
+    margin: 2%;
+}
+
+.presentationagrmethazebrouc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.carte{
+    margin: 2%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(red, green, blue, 0.5);
+    border-left: 1px solid rgba(red, green, blue, 0.5);
+    backdrop-filter: blur(5px);
+}
+.presentationcontenu{
+    padding: 2%;
+    text-align: center;
+    transition: 0.5s;
+}
+.titre{
+    font-size: 200%;
+    color: rgba(red, green, blue, 0.05);
+    pointer-events: none;
+    padding: 2%;
+}
+.presentationtexte{
+    font-size: 150%;
+    color: black;
+    z-index: 1;
+}
+.presentationdirigeants{
+    display: flex;
+    justify-content: center;
+}
+@media(max-width: 425px){   /* quand la taille de lécran est de  */
+    .presentationdirigeants{
+        display: inline-block;  /* pour afficher d'un bloc */
+        justify-content: center;
+    }
+}
+.presentationphotodeprofil{
+    width: 100px;
+    border-radius: 50%;
+}
+
 /* Footer */
 .footer{
     color: #BB86FC;   /* couleur de l'écriture */
@@ -179,6 +245,7 @@ div#blur.active{
     width: auto;    /* largeur */
     padding: 2%;    /* contour intérieur */
     display: flex;  /* affichage */
+    margin-top: 2%;
 }
 .containerfooter{
     text-align:center;  /* allignement du texte au milieu */
