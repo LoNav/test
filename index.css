@@ -21,7 +21,7 @@
 }
 li{
     padding: 1%;    /* cadre intérieur dans le bloc navbar */
-    width: 20%; /* un élément de la liste fait 50% parcequ'il y a 2 éléments */
+    width: 50%; /* un élément de la liste fait 50% parcequ'il y a 2 éléments */
     text-align: center; /* alligner le contenu de chaque compartiment au milieu de celui-ci */
     list-style-type: none;   /* enlever les points aujouter automatiquement aux listes */
 }
