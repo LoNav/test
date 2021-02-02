@@ -1,149 +1,229 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <!-- Langue de la page par défaut -->
-  <head>
-    <meta name="auteur" content="Navet Louis" />
-    <!-- Auteur -->
-    <meta name="description" content="Agri-Methazebrouck collecte, recyclage, valorisation des déchets ménagers"/>
-    <!-- Description du site -->
-    <meta charset="UTF-8"/>
-    <!-- Encodage des caractères de la page -->
-    <meta name="viewport" content="width=device-width, user-scalable, initial-scale=1.0, nimimum-scale=1.0"/>
-    <!-- Respecter le responsive -->
-    <link rel="stylesheet" href="./index.css"/>
-    <!-- Feuille css -->
-    <link rel="icon" href="./plante.png"/>
-    <!-- Icon de la tab dans le navigateur -->
+<!-- Langue de la page par défaut -->
 
-    <meta name="robots" content="noindex"> <!-- Enlever avant publication -->
+<head>
+  <meta name="auteur" content="Navet Louis" />
+  <!-- Auteur -->
+  <meta name="description" content="Agri-Methazebrouck collecte, recyclage, valorisation des déchets ménagers" />
+  <!-- Description du site -->
+  <meta charset="UTF-8" />
+  <!-- Encodage des caractères de la page -->
+  <meta name="viewport" content="width=device-width, user-scalable, initial-scale=1.0, nimimum-scale=1.0" />
+  <!-- Respecter le responsive -->
+  <link rel="stylesheet" href="./index.css" />
+  <!-- Feuille css -->
+  <link rel="icon" href="./plante.png" />
+  <!-- Icon de la tab dans le navigateur -->
 
-    <title>Agri Méthazebrouck</title>
-    <!-- Nom du site -->
-  </head>
-  <body>
-    <!-- Corp de la page -->
+  <meta name="robots" content="noindex"> <!-- Enlever avant publication -->
 
-    <div id="blur"> <!-- flou pour les popup -->
+  <title>Agri Méthazebrouck</title>
+  <!-- Nom du site -->
+</head>
 
-      <!-- Navbar -->
-      <div class="navbar">        <!-- Navbar du site -->
-        <ul class="listenavbar">          <!-- Liste dans la navbar -->
-          <li><a id="navbara" href="#">Agrimetazebrouck</a></li>          <!-- Lien vers la page elle meme -->
-          <li><a id="navbara" href="./Devis.html">Devis</a></li>          <!-- Lien vers la page devis -->
-        </ul>
-      </div>
-      <!-- Fin -->
+<body>
+  <!-- Corp de la page -->
 
-      <!-- Contenu -->
+  <div id="blur">
+    <!-- flou pour les popup -->
 
-      <div class="centredelapage">
-        <div class="presentation">
-          <div class="contenu">
-            <div class="titre">La Méthanisation</div>
-            c'est comme accélerer le temps, stocker un mélange de matière
-            organique ou l'on concentre des bactéries qui décomposent le mélange
-            et créer du méthane après opération le digestat et le biogaz
-          </div>
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- Navbar du site -->
+      <ul class="listenavbar">
+        <!-- Liste dans la navbar -->
+        <li><a id="navbara" href="#">Agrimetazebrouck</a></li> <!-- Lien vers la page elle meme -->
+        <li><a id="navbara" href="./Devis.html">Devis</a></li> <!-- Lien vers la page devis -->
+      </ul>
+    </div>
+    <!-- Fin -->
 
-          <div class="contenu">
-            <div class="titre">Le BioGaz</div>
-            est produit pour faire de l'éléctricité, de la chaleur et meme les
-            deux en meme temps, mais il est utilisable en BioCarburant également
-          </div>
+    <!-- Contenu -->
 
-          <div class="contenu">
-            <div class="titre">Le Digestat</div>
-            est le produit après décomposition de la matière qui peut servir
-            d'engrais sur les exploitations agricoles en prenant quelques
-            précautions
-          </div>
+    <div class="lespartenairestitre">La Méthanisation</div>
+
+    <div class="centredelapage">
+      <div class="presentation">
+        <div class="contenu">
+          <div class="titre">La Méthanisation</div>
+          c'est comme accélérer le temps, stocker un mélange de matières organiques où l'on concentre des bactéries qui
+          décomposent le mélange et créer du méthane après opération le digestat et le biogaz
         </div>
 
-        <div class="infocontenu">
-          <div class="titre" id="infotitre">Le Mélange organique</div>
-          <div class="infoecriture">Déchets verts broyés</div>
-          <div class="infoecriture">Sous produits agricole</div>
-          <div class="infoecriture">Fumier animal</div>
+        <div class="contenu">
+          <div class="titre">Le BioGaz</div>
+          est produit pour faire de l'électricité, de la chaleur et même les deux en même temps, mais il est utilisable
+          en Biocarburant également
+        </div>
+
+        <div class="contenu">
+          <div class="titre">Le Digestat</div>
+          est le produit après décomposition de la matière qui peut servir
+          d'engrais sur les exploitations agricoles en prenant quelques
+          précautions
         </div>
       </div>
 
-      <div class="lespartenairestitre">Les partenaires</div>
+      <div class="infocontenu">
+        <div class="titre" id="infotitre">Le Mélange organique</div>
+        <div class="infoecriture">Déchets verts broyés</div>
+        <div class="infoecriture">Sous produits agricole</div>
+        <div class="infoecriture">Fumier animal</div>
+      </div>
+    </div>
 
-      <div class="partenaires" id="blur">
-        <a class="infopartenaire" onclick="toggleEsat()">
-          <div class="contenupartenaire">L'Esat Les papillons blancs</div>
-        </a>
+    <div class="lespartenairestitre">Les partenaires</div>
 
-        <a class="infopartenaire" onclick="toggleOrmeactivitee()">
-          <div class="contenupartenaire">Orme activitée</div>
-        </a>
+    <div class="partenaires" id="blur">
+      <a class="infopartenaire" onclick="toggleEsat()">
+        <div class="contenupartenaire">L'Esat Les papillons blancs</div>
+      </a>
 
-        <a class="infopartenaire" onclick="toggleSmictom()">
-          <div class="contenupartenaire">Smictom des flandres</div>
-        </a>
+      <a class="infopartenaire" onclick="toggleOrmeactivitee()">
+        <div class="contenupartenaire">Orme activitée</div>
+      </a>
+
+      <a class="infopartenaire" onclick="toggleSmictom()">
+        <div class="contenupartenaire">Smictom des flandres</div>
+      </a>
+    </div>
+
+    <div class="lespartenairestitre">Agri-Méthazebrouck</div>
+
+    <div class="présentationAgrimethazebrouck">
+      <div class="Contenu">
+        <div class="texte">
+          Agri-Methazebrouck est une SARL ayant commencé son activité en juillet
+          2017 dans la méthanisation pour valoriser les rejets agricoles, mais
+          aussi pour un souci environnemental, ainsi que pour organiser des
+          partenariats sur le territoire d'Hazebrouck.
+        </div>
+        <div class="texte">
+          Agri-Methazebrouck utilise le biogaz produit par le mélange organique
+          lors de la décomposition dans les garages pour produire de
+          l'électricité. Le gaz est donc récupéré et envoyé au moteur, qui
+          produit de la chaleur et de l'électricité qui sont tous les deux
+          récupérer. L'électricité est produite en faisant fonctionner le moteur
+          avec le biogaz, la chaleur sort du moteur dû à son activité, elle est
+          donc captée avec de l'eau passante à proximité de ce moteur, qui
+          réchauffe celle-ci.
+        </div>
+        <div class="texte">
+          Après 4 semaines de stockage dans un garage, le gaz a était extrait en
+          grande partie, le mélange est donc sorti du garage pendant ce temps,
+          et devient donc du digestat qui lui est utilisé comme fertilisant.
+        </div>
+      </div>
+    </div>
+
+    <div class="presentationdirigeants">
+
+      <div class="presentationagrmethazebrouc">
+        <div class="carte">
+          <div class="presentationcontenu">
+            <img src="./images.jpg" alt="" class="presentationphotodeprofil">
+            <div class="titre">
+              Dirigeant 1
+            </div>
+            <div class="presentationtexte">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas facilis et magnam, libero
+              deleniti, ipsum officia, repellendus quae voluptatibus odio tempora consequatur aut omnis qui non ratione
+              error enim.
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Fin -->
-
-      <!-- Footer -->
-
-      <div class="footer">        <!-- Footer du site -->
-        <div id="fg1" class="containerfooter">          <!-- Premier cadre -->
-          Copyright© 2021 Agri-Methazebrouck. Tout droit réservé          <!-- contenu du premier cadre -->
+      <div class="presentationagrmethazebrouc">
+        <div class="carte">
+          <div class="presentationcontenu">
+            <img src="./images.jpg" alt="" class="presentationphotodeprofil">
+            <div class="titre">
+              Dirigeant 2
+            </div>
+            <div class="presentationtexte">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas facilis et magnam, libero
+              deleniti, ipsum officia, repellendus quae voluptatibus odio tempora consequatur aut omnis qui non ratione
+              error enim.
+            </div>
+          </div>
         </div>
-        <div id="fg2" class="containerfooter">          <!-- deuxième cadre -->
-          Mentions Légales          <!-- contenu du deuxième cadre -->
-        </div>
-        <div id="fg3" class="containerfooter">          <!-- troisième cadre -->
-          Contactez-Nous!
-          <a href="tel:+33500000000">Téléphone</a>
-          <a href="mailto:loloui62000@gmail.com?subject=Bonjour=cc@example.com&bcc=bcc@example.com&body=Bonjour, j'aimerais discuter avec vous. Cordialement">mail</a>
+      </div>
+    </div>
+
+
+    <!-- Fin -->
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <!-- Footer du site -->
+      <div id="fg1" class="containerfooter">
+        <!-- Premier cadre -->
+        Copyright© 2021 Agri-Methazebrouck. Tout droit réservé
+        <!-- contenu du premier cadre -->
+      </div>
+      <div id="fg2" class="containerfooter">
+        <!-- deuxième cadre -->
+        Mentions Légales
+        <!-- contenu du deuxième cadre -->
+      </div>
+      <div id="fg3" class="containerfooter">
+        <!-- troisième cadre -->
+        Contactez-Nous!
+        <a href="tel:+33500000000">Téléphone</a>
+        <a
+          href="mailto:loloui62000@gmail.com?subject=Bonjour=cc@example.com&bcc=bcc@example.com&body=Bonjour, j'aimerais discuter avec vous. Cordialement">mail</a>
         <!-- contenu du troisième cadre -->
-        </div>
-      </div>
-
-
-
-
-      <!-- Fin -->
-
-
-    </div>
-
-    <div class="popup" id="popupesat">
-      <div class="titrepopup">Esat Les papillons blancs</div>
-      <div class="textpopup">
-        L'Esat est une structure médico-sociale, un établissement de travail adapté au rythme de chacun, prenant en charge des déficientes intellectuelles. 
-      </div>
-      <div class="lesbtnpopup">
-        <a onclick="toggleEsat()" id="btnpopup1" class="btngrouppopup">Fermer</a>
-        <a href="https://www.papillonsblancshazebrouck.org/les-secteurs/secteur-travail-activites/esat-hazebrouck/" id="btnpopup2" class="btngrouppopup">Le site</a>
       </div>
     </div>
 
-    <div class="popup" id="popupormeactivitee">
-      <div class="titrepopup">Orme activitée</div>
-      <div class="textpopup">
-        Orme activitée est une association d'insertion professionnelle.
-      </div>
-      <div class="lesbtnpopup">
-        <a onclick="toggleOrmeactivitee()" id="btnpopup1" class="btngrouppopup">Fermer</a>
-        <a href="http://orme-activitee.e-monsite.com/" id="btnpopup2" class="btngrouppopup">Le site</a>
-      </div>
+
+
+
+    <!-- Fin -->
+
+
+  </div>
+
+  <div class="popup" id="popupesat">
+    <div class="titrepopup">Esat Les papillons blancs</div>
+    <div class="textpopup">
+      L'Esat est une structure médico-sociale, un établissement de travail adapté au rythme de chacun, prenant en charge
+      des déficientes intellectuelles.
     </div>
-
-    <div class="popup" id="popupsmictom">
-      <div class="titrepopup">Smictom des flandres</div>
-      <div class="textpopup">
-        Smictom est un syndicat mixte intercommunal de collecte et de traitement des ordures.
-      </div>
-      <div class="lesbtnpopup">
-        <a onclick="toggleSmictom()" id="btnpopup1" class="btngrouppopup">Fermer</a>
-        <ahref="http://www.smictomdesflandres.fr/" id="btnpopup2" class="btngrouppopup">Le site</a>
-      </div>
+    <div class="lesbtnpopup">
+      <a onclick="toggleEsat()" id="btnpopup1" class="btngrouppopup">Fermer</a>
+      <a href="https://www.papillonsblancshazebrouck.org/les-secteurs/secteur-travail-activites/esat-hazebrouck/"
+        id="btnpopup2" class="btngrouppopup">Le site</a>
     </div>
+  </div>
 
-    <script src="./index.js"></script> <!-- Script pour les popup partenariat -->
+  <div class="popup" id="popupormeactivitee">
+    <div class="titrepopup">Orme activitée</div>
+    <div class="textpopup">
+      Orme activitée est une association d'insertion professionnelle.
+    </div>
+    <div class="lesbtnpopup">
+      <a onclick="toggleOrmeactivitee()" id="btnpopup1" class="btngrouppopup">Fermer</a>
+      <a href="http://orme-activitee.e-monsite.com/" id="btnpopup2" class="btngrouppopup">Le site</a>
+    </div>
+  </div>
 
-  </body>
+  <div class="popup" id="popupsmictom">
+    <div class="titrepopup">Smictom des flandres</div>
+    <div class="textpopup">
+      Smictom est un syndicat mixte intercommunal de collecte et de traitement des ordures.
+    </div>
+    <div class="lesbtnpopup">
+      <a onclick="toggleSmictom()" id="btnpopup1" class="btngrouppopup">Fermer</a>
+      <ahref="http: //www.smictomdesflandres.fr/" id="btnpopup2" class="btngrouppopup">Le site</a>
+    </div>
+  </div>
+
+  <script src="./index.js"></script> <!-- Script pour les popup partenariat -->
+
+</body>
+
 </html>
